@@ -23,9 +23,9 @@ class Recipe extends Component {
             <div className="recipe-card">
                 <img className="recipe-img" src={img} alt="food" />
                 <div className="recipe-content">
-                    <h3 className="recipe-title">{title}</h3>
+                    <h2 className="recipe-title">{title}</h2>
+                    <h3>Ingredients: </h3>
                     <ul>
-                        <h3>Ingredients: </h3>
                         <h4>{ingredients}</h4>
                     </ul>
                     <p>{instructions}</p>

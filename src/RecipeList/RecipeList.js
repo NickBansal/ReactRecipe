@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './RecipeList.css';
 import Recipe from './Recipe/Recipe';
-import PropTypes from 'prop-types';
+import propTypes from 'prop-types';
 
 
 class RecipeList extends Component {
@@ -30,10 +30,14 @@ class RecipeList extends Component {
     }
     
     static PropTypes= {
-        recipes: PropTypes.arrayOf(PropTypes.object).isRequired
+        recipes: propTypes.arrayOf(propTypes.object).isRequired
     };
     
     render() {
+
+        // const shouldIShowThis = true
+        // {shouldIShowThis && <stuff />} 
+
         
         const recipes = this.props.recipes.map((r, index) => (
                 <Recipe key={index} {...r} />
